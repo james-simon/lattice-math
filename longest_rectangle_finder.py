@@ -50,7 +50,6 @@ def max_length(d, theta, max_length=1000, eps=1e-5):
 
     total_length = (right_hit_point - left_hit_point) @ np.array([np.sin(theta), np.cos(theta)])
 
-    print(left_hit_point, right_hit_point, total_length)
     return min(total_length, max_length)
 
-print(max_length(.5 ** .5 + .001, np.pi/4))
+# print(max_length(.5 ** .5 + .001, np.pi/4))
